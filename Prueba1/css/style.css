@@ -6,6 +6,14 @@
     height: 100vh;
 }
 
+.body-recupass{
+    margin: 0;
+    padding: 0;
+    background:url(../img/imagen_slider_3-min.jpeg) no-repeat center top;
+    background-size: cover;
+    height: 100vh;
+}
+
 .login-box{
     width: 320px;
     height: 420px;
@@ -42,7 +50,7 @@
     display: block;
 }
 
-.body-login input{
+.body-login input, .body-recupass input{
     width: 100%;
     margin-bottom: 20px;
 }
