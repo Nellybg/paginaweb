@@ -103,3 +103,7 @@
 .login-box a:hover{
     color: #fff;
 }
+
+.body{
+    font-family: 'Lato', sans-serif;
+}
