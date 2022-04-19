@@ -7,9 +7,5 @@ main > .container{
     background: #000;
 }
 .btn-primary{
-    background-color:#A2B38B;
-}
-
-.btn-secondary{
-    background-color:#A2B38B;
+    margin-left: 6px;
 }
