@@ -9,8 +9,16 @@
     width: 100% !important;
     height: 75vh;
 }
+.btn-primary{
+    background-color:#A2B38B;
+}
 
-
+.btn-secondary{
+    background-color:#A2B38B;
+}
+/*
+    hasta aquí
+*/
 .body-login {
     margin: 0;
     padding: 0;
