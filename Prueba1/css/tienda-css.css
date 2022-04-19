@@ -9,3 +9,7 @@ main > .container{
 .btn-primary{
     margin-left: 6px;
 }
+.carrito-boton{
+    margin-right: 2px;
+    padding-right: 6px;
+}
