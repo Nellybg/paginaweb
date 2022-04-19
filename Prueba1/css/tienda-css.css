@@ -6,3 +6,10 @@ main > .container{
     color: #777777!important;
     background: #000;
 }
+.btn-primary{
+    background-color:#A2B38B;
+}
+
+.btn-secondary{
+    background-color:#A2B38B;
+}
