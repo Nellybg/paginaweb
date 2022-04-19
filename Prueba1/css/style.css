@@ -1,3 +1,16 @@
+/*
+    Aquí va el css para el index
+*/
+.carousel-inner{
+    background-size: cover;
+}
+
+.carousel-item img {
+    width: 100% !important;
+    height: 75%;
+}
+
+
 .body-login {
     margin: 0;
     padding: 0;
