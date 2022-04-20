@@ -115,3 +115,10 @@
 .body{
     font-family: 'Lato', sans-serif;
 }
+.carrito-boton{
+    margin-right: 2px;
+    padding-right: 6px;
+}
+.btn-primary{
+    margin-left: 6px;
+}
