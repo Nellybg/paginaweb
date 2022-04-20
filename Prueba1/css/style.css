@@ -9,12 +9,12 @@
     width: 100% !important;
     height: 75vh;
 }
-.btn-primary{
-    background-color:#A2B38B;
+.card {
+    align-items: center;
 }
-
-.btn-secondary{
-    background-color:#A2B38B;
+.card img {
+    width: 50%;
+    margin-top: 5%;
 }
 /*
     hasta aquí
@@ -114,4 +114,11 @@
 
 .body{
     font-family: 'Lato', sans-serif;
+}
+.carrito-boton{
+    margin-right: 2px;
+    padding-right: 6px;
+}
+.btn-primary{
+    margin-left: 6px;
 }
