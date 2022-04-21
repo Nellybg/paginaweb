@@ -1,8 +1,8 @@
 .btn {
-    background-color: white;
-    color: gray;
+    background-color: white !important;
+    color: gray !important;
 }
 
 .btn img{
-    color: white;
+    color: white !important;
 }
