@@ -22,16 +22,13 @@
 .body-login {
     margin: 0;
     padding: 0;
-    background:url(../img/imagen_slider_2-min.jpeg) no-repeat center top;
-    background-size: cover;
     height: 100vh;
 }
 
 .body-recupass{
     margin: 0;
     padding: 0;
-    background:url(../img/imagen_slider_3-min.jpeg) no-repeat center top;
-    background-size: cover;
+
     height: 100vh;
 }
 
@@ -114,11 +111,4 @@
 
 .body{
     font-family: 'Lato', sans-serif;
-}
-.carrito-boton{
-    margin-right: 2px;
-    padding-right: 6px;
-}
-.btn-primary{
-    margin-left: 6px;
 }
