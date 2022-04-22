@@ -1,0 +1,15 @@
+.carousel-inner{
+    background-size: cover;
+}
+
+.carousel-item img {
+    width: 100% !important;
+    height: 75vh;
+}
+.card {
+    align-items: center;
+}
+.card img {
+    width: 50%;
+    margin-top: 5%;
+}
