@@ -19,6 +19,7 @@ $(document).ready(function () {
             },
             email: "Por favor ingresa correo valido",
             Contraseña: "Por favor ingresa una contraseña"
-        }
+        },
+        errorElement: "em"
     })
 })
