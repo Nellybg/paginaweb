@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/cards.css">
+    <script src="jquery.rut.js"></script>
     <title>Registrar cuenta - Grupo Cero</title>
 </head>
 
@@ -21,6 +22,7 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
     <script src="js/registro.js"></script>
+    <script src="js/jquery.rut.js"></script>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid">
@@ -96,15 +98,16 @@
                                             <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                                             <div class="form-outline flex-fill mb-0">
                                                 <label class="form-label" for="nombre">Nombre y apellido</label>
-                                                <input type="text" id="nombre" name="nombre" class="form-control" required/>
+                                                <input type="text" id="nombre" name="nombre" class="form-control"
+                                                    required />
                                             </div>
                                         </div>
 
                                         <div class="d-flex flex-row align-items-center mb-4">
                                             <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                                             <div class="form-outline flex-fill mb-0">
-                                                <label class="form-label" for="nombre">Rut (sin puntos ni guión)</label>
-                                                <input type="text" id="rut" name="rut" class="form-control" required/>
+                                                <label class="form-label" for="nombre">Rut</label>
+                                                <input type="text" id="rut" name="rut" class="form-control" required />
                                             </div>
                                         </div>
 
@@ -112,7 +115,8 @@
                                             <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                                             <div class="form-outline flex-fill mb-0">
                                                 <label class="form-label" for="email">Email</label>
-                                                <input type="email" id="email" name="email" class="form-control" required/>
+                                                <input type="email" id="email" name="email" class="form-control"
+                                                    required />
                                             </div>
                                         </div>
 
@@ -120,21 +124,25 @@
                                             <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                                             <div class="form-outline flex-fill mb-0">
                                                 <label class="form-label" for="contraseña">Contraseña</label>
-                                                <input type="password" id="contraseña" name="contraseña" class="form-control" required/>
+                                                <input type="password" id="contraseña" name="contraseña"
+                                                    class="form-control" required />
                                             </div>
                                         </div>
 
                                         <div class="d-flex flex-row align-items-center mb-4">
                                             <i class="fas fa-key fa-lg me-3 fa-fw"></i>
                                             <div class="form-outline flex-fill mb-0">
-                                                <label class="form-label" for="contraseñaRepite">Repite tu contraseña</label>
-                                                <input type="password" id="contraseñaRepite" name="contraseñaRepite" class="form-control" required/>
+                                                <label class="form-label" for="contraseñaRepite">Repite tu
+                                                    contraseña</label>
+                                                <input type="password" id="contraseñaRepite" name="contraseñaRepite"
+                                                    class="form-control" required />
                                             </div>
                                         </div>
 
                                         <div class="checkbox">
                                             <label><input class="form-check-input me-2" type="checkbox" value="agree"
-                                                id="form2Example3c agree" name="agree" required>Estoy de acuerdo que Grupo Cero almacene mis datos</label>
+                                                    id="form2Example3c agree" name="agree" required>Estoy de acuerdo que
+                                                Grupo Cero almacene mis datos</label>
                                         </div><br>
 
                                         <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
@@ -145,8 +153,7 @@
 
                                 </div>
                                 <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
-                                    <img src="img/iconos/logo.png"
-                                        class="img-fluid" alt="Sample image">
+                                    <img src="img/iconos/logo.png" class="img-fluid" alt="Sample image">
 
                                 </div>
                             </div>
@@ -167,6 +174,13 @@
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.4/dist/jquery.validate.js"></script>
+    <script>
+        $(function () {
+            $("#rut").rut().on('rutValido', function (e, rut, dv) {
+                alert("El rut " + rut + "-" + dv + " es correcto");
+            }, { minimumLength: 7 });
+        })
+    </script>
 </body>
 
 </html>

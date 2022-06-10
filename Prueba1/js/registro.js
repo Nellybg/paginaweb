@@ -18,6 +18,9 @@ $(document).ready(function () {
                 minlength: 5,
                 equalTo: "#contraseña"
             },
+            rut: {
+                required : true
+            },
             agree: "required"
 
         },
@@ -38,6 +41,9 @@ $(document).ready(function () {
                 required: "Ingresa una contraseña",
                 minlength: "Tu contraseña debe ser de no menos de 5 caracteres de longitud",
                 equalTo: "Por favor ingresa la misma contraseña"
+            },
+            rut:{
+                required: "Ingresa el rut correctamente"
             },
             agree: "Por favor acepta nuestra política"
         },
