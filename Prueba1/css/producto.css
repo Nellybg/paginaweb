@@ -1,0 +1,29 @@
+
+.cont{
+    height: 50rem;
+    height: 90rem;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1 rem rgab(51,51,51,.2);
+    display: flex;
+}
+
+.image-container{
+        width: 50%;
+}
+    
+.big-image{
+    height: 70%;
+    width: 100%;
+    padding: 2rem;
+}
+
+img{
+    height:50%;
+    width:50%;
+    object-fit: cover;
+    box-shadow: 0 .5rem 1 rem rgab(51,51,51,.2);
+}
+
+
+
+
