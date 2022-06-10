@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <script src="jquery.rut.js"></script>
     <title>Registrar cuenta - Grupo Cero</title>
 </head>
 
@@ -19,6 +21,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <script src="js/registro.js"></script>
+    <script src="js/jquery.rut.js"></script>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid">
@@ -75,9 +79,9 @@
                 </a>
             </div>
         </div>
-    </nav>
+    </nav><br><br>
 
-    <section class="vh-100" style="background-color: #eee;">
+    <section class="vh-100 container-fluid" style="background-color: #eee;">
         <div class="container h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col-lg-12 col-xl-11">
@@ -88,62 +92,74 @@
 
                                     <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Crea tu cuenta</p>
 
-                                    <form class="mx-1 mx-md-4">
+                                    <form class="mx-1 mx-md-4" id="SingUp">
 
                                         <div class="d-flex flex-row align-items-center mb-4">
                                             <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                                             <div class="form-outline flex-fill mb-0">
-                                                <label class="form-label" for="form3Example1c">Nombre y apellido</label>
-                                                <input type="text" id="form3Example1c" class="form-control" required/>
+                                                <label class="form-label" for="nombre">Nombre y apellido</label>
+                                                <input type="text" id="nombre" name="nombre" class="form-control"
+                                                    required />
                                             </div>
                                         </div>
 
                                         <div class="d-flex flex-row align-items-center mb-4">
                                             <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                                             <div class="form-outline flex-fill mb-0">
-                                                <label class="form-label" for="form3Example1c">Email</label>
-                                                <input type="email" id="form3Example1c" class="form-control" required/>
+                                                <label class="form-label" for="rut">Rut (sin puntos y con guion)</label>
+                                                <input type="text" id="rut" name="rut" class="form-control">
+                                                <p class="text" id="msgerror"></p>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex flex-row align-items-center mb-4">
+                                            <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                                            <div class="form-outline flex-fill mb-0">
+                                                <label class="form-label" for="email">Email</label>
+                                                <input type="email" id="email" name="email" class="form-control"
+                                                    required />
                                             </div>
                                         </div>
 
                                         <div class="d-flex flex-row align-items-center mb-4">
                                             <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                                             <div class="form-outline flex-fill mb-0">
-                                                <label class="form-label" for="form3Example4c">Contraseña</label>
-                                                <input type="password" id="form3Example4c" class="form-control" required/>
+                                                <label class="form-label" for="contraseña">Contraseña</label>
+                                                <input type="password" id="contraseña" name="contraseña"
+                                                    class="form-control" required />
                                             </div>
                                         </div>
 
                                         <div class="d-flex flex-row align-items-center mb-4">
                                             <i class="fas fa-key fa-lg me-3 fa-fw"></i>
                                             <div class="form-outline flex-fill mb-0">
-                                                <label class="form-label" for="form3Example4cd">Repite tu contraseña</label>
-                                                <input type="password" id="form3Example4cd" class="form-control" required/>
+                                                <label class="form-label" for="contraseñaRepite">Repite tu
+                                                    contraseña</label>
+                                                <input type="password" id="contraseñaRepite" name="contraseñaRepite"
+                                                    class="form-control" required />
                                             </div>
                                         </div>
 
-                                        <div class="form-check d-flex justify-content-center mb-5">
-                                            <input class="form-check-input me-2" type="checkbox" value=""
-                                                id="form2Example3c" required>
-                                            <label class="form-check-label" for="form2Example3">
-                                                Estoy de acuerdo que Grupo Cero almacene mis datos</label>
-                                        </div>
+                                        <div class="checkbox">
+                                            <label><input class="form-check-input me-2" type="checkbox" value="agree"
+                                                    id="form2Example3c agree" name="agree" required>Estoy de acuerdo que
+                                                Grupo Cero almacene mis datos</label>
+                                        </div><br>
 
                                         <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                                            <button type="submit" class="btn btn-primary btn-lg">Crear cuenta</button>
-                                        </div>
+                                            <button type="submit" id="btnvalida" class="btn btn-primary btn-lg">Crear cuenta</button>
+                                        </div><br>
 
                                     </form>
 
                                 </div>
                                 <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
-                                    <img src="img/iconos/logo.png"
-                                        class="img-fluid" alt="Sample image">
+                                    <img src="img/iconos/logo.png" class="img-fluid" alt="Sample image">
 
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div><br><br>
                 </div>
             </div>
         </div>
@@ -154,12 +170,11 @@
 
             <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
                 © 2022 Copyright:
-                <a class="text-dark" href="https://www.duoc.cl/">Deisne INC.</a>
+                <a class="text-dark" href="https://www.duoc.cl/">Deisne INC</a>
             </div>
         </footer>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.4/dist/jquery.validate.js"></script>
 </body>
 
 </html>
