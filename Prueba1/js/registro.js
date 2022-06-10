@@ -39,7 +39,7 @@ $(document).ready(function () {
                 minlength: "Tu contraseña debe ser de no menos de 5 caracteres de longitud",
                 equalTo: "Por favor ingresa la misma contraseña"
             },
-            agree: "Por favor acepta nuestra política"
+            agree: " Por favor acepta nuestra política"
         },
         errorElement: "em",
         errorPlacement: function (error, element) {

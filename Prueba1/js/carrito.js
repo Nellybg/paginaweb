@@ -41,6 +41,7 @@ $(document).ready(function () {
                 minlength: "Ingrese los 3 digitos del cvv",
                 maxlength: "Ingrese los 3 digitos del cvv"
             }
-        } 
+        },
+        errorElement: "em"
     })
 })

@@ -10,3 +10,9 @@ body{
 .btn img{
     color: white !important;
 }
+p#msgerror.text{
+    color : rgb(255, 0, 0);
+}
+em{
+    color: red;
+}
