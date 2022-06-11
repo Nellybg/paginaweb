@@ -15,7 +15,6 @@ $(document).ready(function () {
             },
             contraseñaRepite: {
                 required: true,
-                minlength: 5,
                 equalTo: "#contraseña"
             },
             agree: "required"
@@ -31,12 +30,11 @@ $(document).ready(function () {
                 email: "Por favor ingresa correo valido"
             },
             contraseña: {
-                required: "Ingresa una contraseña",
+                required: "Ingresa una contraseña de 5-12 caracteres",
                 minlength: "Tu contraseña debe ser de no menos de 5 caracteres de longitud",
             },
             contraseñaRepite: {
                 required: "Ingresa una contraseña",
-                minlength: "Tu contraseña debe ser de no menos de 5 caracteres de longitud",
                 equalTo: "Por favor ingresa la misma contraseña"
             },
             agree: " Por favor acepta nuestra política"
