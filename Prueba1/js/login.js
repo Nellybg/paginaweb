@@ -12,12 +12,12 @@ $(document).ready(function () {
         },
         messages: {
             email: {
-                required: "Por favor ingresa correo valido"
+                required: "Por favor ingresa correo válido"
             },
             Contraseña: {
                 required: "Por favor ingresa una contraseña"
             },
-            email: "Por favor ingresa correo valido",
+            email: "Por favor ingresa correo válido",
             Contraseña: "Por favor ingresa una contraseña"
         },
         errorElement: "em"

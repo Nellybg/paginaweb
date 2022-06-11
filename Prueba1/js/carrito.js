@@ -24,10 +24,10 @@ $(document).ready(function () {
         messages: {
             nombre: {
                 required: "Por favor ingresa tu nombre completo",
-                minlength: "Tu nombre debe ser de no menos de 5 caracteres"
+                minlength: "Tu nombre debe ser de no menos de 5 carácteres"
             },
             numT: {
-                required: "Ingrese el numero de su tarjeta",
+                required: "Ingrese el número de su tarjeta",
                 minlength: "Ingrese los 12 digitos de su tarjeta",
                 maxlength: "Ingrese los 12 digitos de su tarjeta"
             },

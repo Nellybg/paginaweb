@@ -11,7 +11,7 @@ $(document).ready(function () {
             },
             nombre: {
                 required: true,
-                minlength: 5
+                minlength: 2
             },
             contraseñaRepite: {
                 required: true,
@@ -23,15 +23,15 @@ $(document).ready(function () {
         messages: {
             nombre: {
                 required: "Por favor ingresa tu nombre completo",
-                minlength: "Tu nombre debe ser de no menos de 5 caracteres"
+                minlength: "Tu nombre debe ser de no menos de 2 carácteres"
             },
             email: {
-                required: "Por favor ingresa correo valido",
-                email: "Por favor ingresa correo valido"
+                required: "Por favor ingresa correo válido",
+                email: "Por favor ingresa correo válido"
             },
             contraseña: {
-                required: "Ingresa una contraseña de 5-12 caracteres",
-                minlength: "Tu contraseña debe ser de no menos de 5 caracteres de longitud",
+                required: "Ingresa una contraseña de 5-12 carácteres",
+                minlength: "Tu contraseña debe ser de no menos de 5 carácteres de longitud",
             },
             contraseñaRepite: {
                 required: "Ingresa una contraseña",
