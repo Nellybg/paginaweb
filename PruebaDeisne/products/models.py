@@ -4,7 +4,6 @@ from django.db import models
 class Products(models.Model):  
     id = models.AutoField(primary_key=True)
     nombre = models.CharField(max_length=100)
-    cod_prod = models.IntegerField()
     tipo_obra = models.TextField(max_length=50)
     artista = models.TextField(max_length=50)
     valor = models.IntegerField()
