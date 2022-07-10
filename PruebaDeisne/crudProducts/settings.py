@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'crudProducts.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'OBRAS',  
+        'NAME': 'obras',  
         'USER':'root',  
         'PASSWORD':'',  
         'HOST':'localhost',  
