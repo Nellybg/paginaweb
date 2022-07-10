@@ -1,0 +1,235 @@
+2022-07-10 15:23:27,282 [INFO] b'csrfmiddlewaretoken=OXz5fklwAaXXfUJPthUidWRq9PsKFl6sym2uunU5fVYJUtrdl0ZgUimxkkUzN5Dp&nombre=Batman&artista=Neil+Adams&valor=40000&tipo_obra=Pintura&descripcion=Pintura+bkn&agree=agree'
+2022-07-10 15:23:51,103 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\nelly_becerra_django\crudProducts\products\views.py changed, reloading.
+2022-07-10 15:23:54,976 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\nelly_becerra_django\crudProducts\products\views.py changed, reloading.
+2022-07-10 15:23:56,627 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\nelly_becerra_django\crudProducts\products\views.py changed, reloading.
+2022-07-10 15:24:02,451 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\nelly_becerra_django\crudProducts\products\views.py changed, reloading.
+2022-07-10 15:24:06,193 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\nelly_becerra_django\crudProducts\products\views.py changed, reloading.
+2022-07-10 15:24:19,409 [INFO] b'csrfmiddlewaretoken=148TRhrMmhDzZfikaJ3FEYFyxv2JzScQLtBi6k0l12ElEO0I2s8DlkaFI0uyHCJN&nombre=Batman&artista=Neil+Adams&valor=40000&tipo_obra=Pintura&descripcion=Pintura+bkn&agree=agree'
+2022-07-10 15:24:19,409 [INFO] aca 1
+2022-07-10 15:24:19,410 [INFO] False
+2022-07-10 15:25:19,971 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\nelly_becerra_django\crudProducts\products\models.py changed, reloading.
+2022-07-10 15:25:35,123 [INFO] b'csrfmiddlewaretoken=jHHMXlBx17zSYxlWLhYRvRG8TykN0BEC36abcoa6GSAED63kD03Pcdbf43MC8lbz&nombre=Batman&artista=Neil+Adams&valor=40000&tipo_obra=Pintura&descripcion=Pintura+bkn&agree=agree'
+2022-07-10 15:25:35,124 [INFO] aca 1
+2022-07-10 15:25:35,125 [INFO] True
+2022-07-10 15:26:11,051 [INFO] b''
+2022-07-10 15:27:24,224 [INFO] b'csrfmiddlewaretoken=kZt6c4Zm9Cita2U7oJRxM3EIxCFMDPMw4oWvr7yVOnjfPBCvgsWvtp9PI77BLzjt&nombre=Batman&artista=Neil+Adams&valor=40000&tipo_obra=Pintura&descripcion=Pintura+bkn&agree=agree'
+2022-07-10 15:27:24,225 [INFO] aca 1
+2022-07-10 15:27:24,226 [INFO] True
+2022-07-10 15:28:07,295 [INFO] b'csrfmiddlewaretoken=smTkGcnEeZkmqeBKCfxhpNAOo6vX1dwMcLmJVfWdTKl85Nj8uYCf695VzBXM9X3J&nombre=Batman+2&artista=Neil+Adams+2&valor=400002&tipo_obra=Pintura+2&descripcion=Pintura+bkn2&agree=agree'
+2022-07-10 15:28:07,295 [INFO] aca 1
+2022-07-10 15:28:07,296 [INFO] True
+2022-07-10 15:29:13,343 [INFO] b'csrfmiddlewaretoken=3S6c6tQzzrNORfKSnEVYu5mOPfJLvKadNhzBlwp8ecOAwOsgfn0WbrRV0KbADuHa&nombre=Batman&artista=Neil+Adams&valor=40000&tipo_obra=Pintura&descripcion=Pintura+bkn&agree=agree'
+2022-07-10 15:29:13,343 [INFO] aca 1
+2022-07-10 15:29:13,344 [INFO] True
+2022-07-10 15:29:32,433 [INFO] b'csrfmiddlewaretoken=oWBz5q1rRmw6r8InfFSUAmfXKZrFAgLc8l4YktA0w7xS6HqL7oXShIK4VuTuI0i9&nombre=Batman+2&artista=Neil+Adams+2&valor=400002&tipo_obra=Pintura+2&descripcion=Pintura+bkn2&agree=agree'
+2022-07-10 15:29:32,434 [INFO] aca 1
+2022-07-10 15:29:32,435 [INFO] True
+2022-07-10 15:32:42,739 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\nelly_becerra_django\crudProducts\products\views.py changed, reloading.
+2022-07-10 15:32:54,481 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\nelly_becerra_django\crudProducts\products\views.py changed, reloading.
+2022-07-10 15:33:03,405 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\nelly_becerra_django\crudProducts\products\views.py changed, reloading.
+2022-07-10 15:33:06,083 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\nelly_becerra_django\crudProducts\products\views.py changed, reloading.
+2022-07-10 15:33:07,788 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\nelly_becerra_django\crudProducts\products\views.py changed, reloading.
+2022-07-10 15:33:22,181 [INFO] b'csrfmiddlewaretoken=5IFNzMu6GgjYa9RUhiW01cLWWEPmsH5pP78cOP3Fl1kKPIzi911YIyg379hbArCm&nombre=Batman&artista=Neil+Adams&valor=40000&tipo_obra=Pintura&descripcion=Pintura+bkn&agree=agree'
+2022-07-10 15:33:22,181 [INFO] aca 1
+2022-07-10 15:33:22,182 [INFO] True
+2022-07-10 15:33:37,855 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\nelly_becerra_django\crudProducts\products\views.py changed, reloading.
+2022-07-10 15:33:40,573 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\nelly_becerra_django\crudProducts\products\views.py changed, reloading.
+2022-07-10 15:33:52,800 [INFO] b'csrfmiddlewaretoken=iU5rgmgyNKf2Wbs2EtUjpOEyUQQdyGQt2jyQvpP7svgOBKaqwcZh6a9F5li2Gqnq&nombre=Batman&artista=Neil+Adams&valor=400002&tipo_obra=Pintura&descripcion=Pintura+bkn&agree=agree'
+2022-07-10 15:33:52,801 [INFO] aca 1
+2022-07-10 15:33:52,802 [INFO] True
+2022-07-10 15:34:05,361 [INFO] b'csrfmiddlewaretoken=iU5rgmgyNKf2Wbs2EtUjpOEyUQQdyGQt2jyQvpP7svgOBKaqwcZh6a9F5li2Gqnq&nombre=Batman&artista=Neil+Adams&valor=400002&tipo_obra=Pintura&descripcion=Pintura+bkn&agree=agree'
+2022-07-10 15:34:05,361 [INFO] aca 1
+2022-07-10 15:34:05,362 [INFO] True
+2022-07-10 15:34:17,747 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\nelly_becerra_django\crudProducts\products\views.py changed, reloading.
+2022-07-10 15:34:20,583 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\nelly_becerra_django\crudProducts\products\views.py changed, reloading.
+2022-07-10 15:34:35,900 [INFO] b'csrfmiddlewaretoken=zjUFZbU49eIx4PdOAYx6sxxUIss1YyRgjIn4eetDOZJjJoVcsHC49T21TXUQ6iod&nombre=Batman&artista=Neil+Adams&valor=40000&tipo_obra=Pintura&descripcion=Pintura+bkn&agree=agree'
+2022-07-10 15:34:35,901 [INFO] aca 1
+2022-07-10 15:34:35,902 [INFO] True
+2022-07-10 15:34:35,902 [INFO] error
+2022-07-10 15:34:51,580 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\nelly_becerra_django\crudProducts\products\views.py changed, reloading.
+2022-07-10 15:35:03,031 [INFO] b'csrfmiddlewaretoken=zjUFZbU49eIx4PdOAYx6sxxUIss1YyRgjIn4eetDOZJjJoVcsHC49T21TXUQ6iod&nombre=Batman&artista=Neil+Adams&valor=40000&tipo_obra=Pintura&descripcion=Pintura+bkn&agree=agree'
+2022-07-10 15:35:03,032 [INFO] aca 1
+2022-07-10 15:35:03,035 [INFO] True
+2022-07-10 15:35:03,036 [INFO] error
+2022-07-10 15:35:15,862 [INFO] b'csrfmiddlewaretoken=l04ZJBwa4MnAcU861IMj0vI0giZcSywU5pxoYE5JJxomRtQuTrRhHRd7rNr10i3R&nombre=Batman&artista=Neil+Adams&valor=40000&tipo_obra=Pintura&descripcion=Pintura+bkn2&agree=agree'
+2022-07-10 15:35:15,863 [INFO] aca 1
+2022-07-10 15:35:15,863 [INFO] True
+2022-07-10 15:35:15,864 [INFO] error
+2022-07-10 15:36:01,198 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\nelly_becerra_django\crudProducts\products\views.py changed, reloading.
+2022-07-10 15:36:03,917 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\nelly_becerra_django\crudProducts\products\views.py changed, reloading.
+2022-07-10 15:36:09,744 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\nelly_becerra_django\crudProducts\products\views.py changed, reloading.
+2022-07-10 15:36:14,288 [INFO] b'csrfmiddlewaretoken=l04ZJBwa4MnAcU861IMj0vI0giZcSywU5pxoYE5JJxomRtQuTrRhHRd7rNr10i3R&nombre=Batman&artista=Neil+Adams&valor=40000&tipo_obra=Pintura&descripcion=Pintura+bkn2&agree=agree'
+2022-07-10 15:36:14,288 [INFO] aca 1
+2022-07-10 15:36:14,289 [INFO] True
+2022-07-10 15:36:14,289 [INFO] error
+2022-07-10 15:36:25,913 [INFO] b'csrfmiddlewaretoken=RSdy5hDrvdljR4arJ5YvLSjEL5aNbJvgBhGXkkc0aYm5wDSPBO3tseOLWACCjt2d&nombre=Batman&artista=Neil+Adams&valor=400002&tipo_obra=Pintura&descripcion=Pintura+bkn&agree=agree'
+2022-07-10 15:36:25,913 [INFO] aca 1
+2022-07-10 15:36:25,914 [INFO] True
+2022-07-10 15:36:25,914 [INFO] error
+2022-07-10 15:38:41,383 [INFO] b'csrfmiddlewaretoken=RSdy5hDrvdljR4arJ5YvLSjEL5aNbJvgBhGXkkc0aYm5wDSPBO3tseOLWACCjt2d&nombre=Batman&artista=Neil+Adams&valor=400002&tipo_obra=Pintura&descripcion=Pintura+bkn&agree=agree'
+2022-07-10 15:38:41,384 [INFO] aca 1
+2022-07-10 15:38:41,385 [INFO] True
+2022-07-10 15:38:41,385 [INFO] error
+2022-07-10 15:39:01,042 [INFO] b'csrfmiddlewaretoken=ilw7Rd7z8ACy1zfZtE6sKrqMj6QQxOHb2KZw6gG8NlDkG8XnlnbqrNVTuBiFFye8&nombre=Batman&artista=Neil+Adams&valor=40000&tipo_obra=Pintura&descripcion=Pintura+bkn2&agree=agree'
+2022-07-10 15:39:01,043 [INFO] aca 1
+2022-07-10 15:39:01,044 [INFO] True
+2022-07-10 15:39:01,044 [INFO] error
+2022-07-10 15:39:28,438 [INFO] b'csrfmiddlewaretoken=ilw7Rd7z8ACy1zfZtE6sKrqMj6QQxOHb2KZw6gG8NlDkG8XnlnbqrNVTuBiFFye8&nombre=Batman&artista=Neil+Adams&valor=40000&tipo_obra=Pintura&descripcion=Pintura+bkn2&agree=agree'
+2022-07-10 15:39:28,439 [INFO] aca 1
+2022-07-10 15:39:28,439 [INFO] True
+2022-07-10 15:39:28,439 [INFO] error
+2022-07-10 15:39:51,291 [INFO] b'csrfmiddlewaretoken=xQvpDgTKBiggFNOzADlGCGbVA0UGrCwehfYOSjsjg3h2kmwXsmqEj2G2Lvmvzm3b&nombre=Batman&artista=Neil+Adams+2&valor=40000&tipo_obra=Pintura&descripcion=Pintura+bkn&agree=agree'
+2022-07-10 15:39:51,292 [INFO] aca 1
+2022-07-10 15:39:51,292 [INFO] True
+2022-07-10 15:39:51,293 [INFO] error
+2022-07-10 15:40:00,579 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\nelly_becerra_django\crudProducts\products\views.py changed, reloading.
+2022-07-10 15:40:06,155 [INFO] b'csrfmiddlewaretoken=xQvpDgTKBiggFNOzADlGCGbVA0UGrCwehfYOSjsjg3h2kmwXsmqEj2G2Lvmvzm3b&nombre=Batman&artista=Neil+Adams+2&valor=40000&tipo_obra=Pintura&descripcion=Pintura+bkn&agree=agree'
+2022-07-10 15:40:06,156 [INFO] aca 1
+2022-07-10 15:40:06,156 [INFO] True
+2022-07-10 15:40:17,546 [INFO] b'csrfmiddlewaretoken=gpAHqy6tHt2WWz4au03sUKb4zApLOSse0O36FBF2me3IB8MymJ8qB6GbK5RAWCZb&nombre=Batman&artista=Neil+Adams&valor=40000&tipo_obra=Pintura+2&descripcion=Pintura+bkn&agree=agree'
+2022-07-10 15:40:17,546 [INFO] aca 1
+2022-07-10 15:40:17,547 [INFO] True
+2022-07-10 15:45:41,903 [ERROR] Internal Server Error: /tienda
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jorge\Documents\Nelly Becerra\nelly_becerra_django\crudProducts\products\views.py", line 32, in tienda
+    return render(request,'tienda.html')
+  File "C:\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Python39\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Python39\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Python39\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Python39\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Python39\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Python39\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python39\lib\site-packages\django\template\defaulttags.py", line 854, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 518, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 581, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 81: 'for'. Looking for one of: empty, endfor.
+2022-07-10 15:46:48,299 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\nelly_becerra_django\crudProducts\products\views.py changed, reloading.
+2022-07-10 15:46:54,129 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\nelly_becerra_django\crudProducts\products\views.py changed, reloading.
+2022-07-10 15:46:56,821 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\nelly_becerra_django\crudProducts\products\views.py changed, reloading.
+2022-07-10 15:51:20,411 [ERROR] Internal Server Error: /tienda
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jorge\Documents\Nelly Becerra\nelly_becerra_django\crudProducts\products\views.py", line 33, in tienda
+    return render(request,'tienda.html',{'productss':productss})
+  File "C:\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Python39\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Python39\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Python39\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Python39\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Python39\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Python39\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python39\lib\site-packages\django\template\defaulttags.py", line 854, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 518, in parse
+    self.unclosed_block_tag(parse_until)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 581, in unclosed_block_tag
+    raise self.error(token, msg)
+django.template.exceptions.TemplateSyntaxError: Unclosed tag on line 81: 'for'. Looking for one of: empty, endfor.
+2022-07-10 15:52:09,459 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\nelly_becerra_django\crudProducts\products\models.py changed, reloading.
+2022-07-10 15:52:14,212 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\nelly_becerra_django\crudProducts\products\models.py changed, reloading.
+2022-07-10 15:52:57,250 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\nelly_becerra_django\crudProducts\products\models.py changed, reloading.
+2022-07-10 15:55:01,495 [INFO] b'csrfmiddlewaretoken=oMkzGFhmlxOsIxiikfI91LCnm9GmvEkv8bNYVIQV0iPen60GcYN7I77uxE8bDoRs&nombre=Batman&artista=Neil+Adams&valor=40000&tipo_obra=Pintura&descripcion=Pintura+bkn&descripcion=img%2Fproductos%2Fproducto1.jpg&agree=agree'
+2022-07-10 15:55:01,496 [INFO] aca 1
+2022-07-10 15:55:01,497 [INFO] False
+2022-07-10 15:56:35,983 [INFO] b'csrfmiddlewaretoken=oMkzGFhmlxOsIxiikfI91LCnm9GmvEkv8bNYVIQV0iPen60GcYN7I77uxE8bDoRs&nombre=Batman&artista=Neil+Adams&valor=40000&tipo_obra=Pintura&descripcion=Pintura+bkn&descripcion=img%2Fproductos%2Fproducto1.jpg&agree=agree'
+2022-07-10 15:56:35,984 [INFO] aca 1
+2022-07-10 15:56:35,984 [INFO] False
+2022-07-10 15:57:10,325 [INFO] b'csrfmiddlewaretoken=gWiC2j7SB9Oy4d2iszdwpmMSHttXVe0A0lL1hmGrgUPkJMKGkiiu6IhZSYVM3Yxx&nombre=Batman&artista=Neil+Adams+2&valor=40000&tipo_obra=Pintura&descripcion=Pintura+bkn&pathImagen=img%2Fproductos%2Fproducto1.jpg&agree=agree'
+2022-07-10 15:57:10,326 [INFO] aca 1
+2022-07-10 15:57:10,327 [INFO] True
+2022-07-10 15:57:43,419 [ERROR] Internal Server Error: /tienda
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jorge\Documents\Nelly Becerra\nelly_becerra_django\crudProducts\products\views.py", line 33, in tienda
+    return render(request,'tienda.html',{'productss':productss})
+  File "C:\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Python39\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Python39\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Python39\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Python39\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Python39\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Python39\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python39\lib\site-packages\django\template\defaulttags.py", line 854, in do_for
+    nodelist_loop = parser.parse(
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 513, in parse
+    raise self.error(token, e)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Python39\lib\site-packages\django\templatetags\static.py", line 171, in do_static
+    return StaticNode.handle_token(parser, token)
+  File "C:\Python39\lib\site-packages\django\templatetags\static.py", line 145, in handle_token
+    path = parser.compile_filter(bits[1])
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 701, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '{{' from '{{'
+2022-07-10 16:01:24,953 [INFO] b'csrfmiddlewaretoken=7qiIrBBOI7UbVkOhtJTq1bKlYB6YyrJwRPL7GEannSVXATwFlsYoIxfs96yNGbgt&nombre=Batman&artista=Neil+Adams&valor=400002&tipo_obra=Pintura&descripcion=Pintura+bkn&pathImagen=img%2Fproductos%2Fproducto1.jpg&agree=agree'
+2022-07-10 16:01:24,954 [INFO] aca 1
+2022-07-10 16:01:24,954 [INFO] True
+2022-07-10 16:01:57,630 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\nelly_becerra_django\crudProducts\products\views.py changed, reloading.
+2022-07-10 16:02:11,742 [INFO] b'csrfmiddlewaretoken=M3ACphJEvlfYoNarlQC8aHQuiIER990lws31Ekida6gK3mSPdzH6R3lBtd6GhTxi&nombre=Batman+2&artista=Neil+Adams&valor=40000&tipo_obra=Pintura&descripcion=Pintura+bkn2&pathImagen=img%2Fproductos%2Fproducto1.jpg&agree=agree'
+2022-07-10 16:02:11,742 [INFO] aca 1
+2022-07-10 16:02:11,743 [INFO] True
+2022-07-10 16:04:19,815 [INFO] b'csrfmiddlewaretoken=VhYdE4BylChMmOL5sBnwDLISi7bTGYn3FGrCT7a70niy1nttkksuk7dZtCDIOIU0&nombre=kirby&artista=fgfdg&valor=45454&tipo_obra=oleo&descripcion=cxvxcvxc&pathImagen=img%2Fproductos%2Fproducto1.jpg&agree=agree'
+2022-07-10 16:04:19,815 [INFO] aca 1
+2022-07-10 16:04:19,816 [INFO] True

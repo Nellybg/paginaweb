@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Products Records</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+
+<body>
+    <table class="table table-striped table-bordered table-sm">
+        <thead class="thead-dark">
+            <tr>
+                <th>Products ID</th>
+                <th>Products Name</th>
+                <th>Products Description</th>
+                <th>Products Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for products in productss %}
+            <tr>
+                <td>{{ products.id }}</td>
+                <td>{{ products.nombre }}</td>
+                <td>{{ products.artista }}</td>
+                <td>{{ products.valor }}</td>
+                <td>{{ products.tipo_obra }}</td>
+                <td>{{ products.descripcion }}</td>
+                <td>
+                    <a href="/edit/{{ products.id }}"><span class="glyphicon glyphicon-pencil">Edit</span></a>
+                    <a href="/delete/{{ products.id }}">Delete</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <center><a href="/addProduct" class="btn btn-primary">Agregar Nuevo Producto</a></center>
+</body>
+
+</html>
