@@ -1,6 +1,37 @@
 $(document).ready(function () {
     $('#SingUp').validate({
         rules: {
+            anno:{
+                required: true,
+                minlength: 4,
+                maxlength: 4
+            },
+            envio:{
+                required: true,
+                minlength: 2,
+                maxlength: 30
+            },
+            dimensiones:{
+                required: true,
+                minlength: 3,
+                maxlength: 7
+            },
+            otros_detalles:{
+                required: true,
+                minlength: 2,
+                maxlength: 30
+            },
+            tecnica:{
+                required: true,
+                minlength: 2,
+                maxlength: 30
+            },
+            codigoProducto:{
+                required: true,
+                number: true,
+                minlength: 2,
+                maxlength: 5
+            },
             pathImagen:{
                 required: true
             },
@@ -49,6 +80,37 @@ $(document).ready(function () {
 
         },
         messages: {
+            anno:{
+                required: "Ingrese el año de la obra",
+                minlength: "Debe tener 4 digitos",
+                maxlength: "Debe tener 4 digitos"
+            },
+            envio:{
+                required: "Ingrese la agencia de envios",
+                minlength: "Debe tener al menos 3 caracteres",
+                maxlength: "Debe tener un máximo de 7 caracteres"
+            },
+            dimensiones:{
+                required: "Ingrese las dimensiones",
+                minlength: "Debe tener al menos 3 caracteres",
+                maxlength: "Debe tener un máximo de 7 caracteres"
+            },
+            otros_detalles:{
+                required: "Ingrese los detalles",
+                minlength: "Debe tener al menos 5 caracteres",
+                maxlength: "Debe tener un máximo de 30 caracteres"
+            },
+            tecnica:{
+                required: "Ingrese la técnica de la obra",
+                minlength: "Debe tener al menos 5 caracteres",
+                maxlength: "Debe tener un máximo de 30 caracteres"
+            },
+            codigoProducto:{
+                required: "Ingrese código de producto",
+                number: "El código tiene que ser numerico",
+                minlength: "El código debe tener al menos 2 digitos",
+                maxlength: "El código debe tener un máximo de 5 digitos"
+            },
             pathImagen:{
                 required: "Ingrese ruta de la imagen"
             },
@@ -68,12 +130,12 @@ $(document).ready(function () {
                 maxlength: "El precio no debe exceder de los 10 digitos"
             },
             artista:{
-                required: "Por favor ingresa el nombre del o de la artista",
+                required: "Ingresa el nombre del o de la artista",
                 minlength: "El nombre del/ la artista debe tener un mínimo de 2 carateres",
                 maxlength: "El nombre del/ la artista debe tener un máximo de 30 carateres"
             },
             nombreObra:{
-                required: "Por favor ingresa el nombre de la obra",
+                required: "Ingresa el nombre de la obra",
                 minlength: "El nombre de la obra debe tener un mínimo de 2 carateres",
                 maxlength: "El nombre de la obra debe tener un máximo de 30 carateres"
             },
@@ -82,8 +144,8 @@ $(document).ready(function () {
                 minlength: "Tu nombre debe ser de no menos de 2 carácteres"
             },
             email: {
-                required: "Por favor ingresa correo válido",
-                email: "Por favor ingresa correo válido"
+                required: "Ingresa correo válido",
+                email: "Ingresa correo válido"
             },
             contraseña: {
                 required: "Ingresa una contraseña de 5-12 carácteres",
@@ -91,7 +153,7 @@ $(document).ready(function () {
             },
             contraseñaRepite: {
                 required: "Ingresa una contraseña",
-                equalTo: "Por favor ingresa la misma contraseña"
+                equalTo: "Ingresa la misma contraseña"
             },
             agree: " Por favor acepta nuestra política"
         },
