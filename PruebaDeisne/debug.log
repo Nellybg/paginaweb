@@ -460,3 +460,11 @@ django.db.utils.ProgrammingError: (1146, "Table 'obras.products' doesn't exist")
 2022-07-10 21:48:18,038 [INFO] b'csrfmiddlewaretoken=0oFXtO6fcDPzGOSHdGccRweKZmWCVC168HTEdBgBpMydaqpdAXy7iQE4hHRu6PIb&nombre=zi&artista=zi&valor=128&tipo_obra=zi&descripcion=zi&pathImagen=img%2Fproductos%2Fproducto1.jpg&agree=agree'
 2022-07-10 21:48:18,039 [INFO] aca 1
 2022-07-10 21:48:18,041 [INFO] True
+2022-07-11 14:45:00,548 [WARNING] Not Found: /
+2022-07-11 14:45:28,838 [INFO] b'csrfmiddlewaretoken=nTz9VHS3r4de922cPi5lsK7iiI4RIHGKAh6jJ180GhQrV9OcN33dridIkuXka8Gp&nombreObra=Kirby+al+%C3%93leo&artista=Masahiro+Sakurai&valor=50000&tipo_obra=%C3%93leo+en+Lienzo&descripcion=Lorem+ipsum+dolordeleniti&pathImagen=img%2Fproductos%2Fproducto1.jpg&agree=agree'
+2022-07-11 14:45:28,839 [INFO] aca 1
+2022-07-11 14:45:28,840 [INFO] False
+2022-07-11 14:53:07,784 [INFO] G:\Mi unidad\3° SEMESTRE\PROGRAMACIÓN WEB\OBRAS_DJANGO\paginaweb\PruebaDeisne\products\admin.py changed, reloading.
+2022-07-11 14:54:15,841 [INFO] b'csrfmiddlewaretoken=kus34pTpvuBHEjQ5txgd6y4UfMLt0ssnj2VGhGjieNXDKsTrVqOjPCItq1L4bdVA&nombreObra=Kirby+al+%C3%93leo&artista=Masahiro+Sakurai&valor=50000&tipo_obra=%C3%93leo+en+Lienzo&descripcion=Lorem+ipsum+dolordeleniti.&pathImagen=img%2Fproductos%2Fproducto1.jpg&agree=agree'
+2022-07-11 14:54:15,844 [INFO] aca 1
+2022-07-11 14:54:15,845 [INFO] False
