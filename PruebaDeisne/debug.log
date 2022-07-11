@@ -1577,3 +1577,9 @@ products.models.Products.DoesNotExist: Products matching query does not exist.
 2022-07-11 17:29:05,144 [INFO] aca 1
 2022-07-11 17:29:05,145 [INFO] True
 2022-07-11 17:30:03,958 [INFO] G:\Mi unidad\3° SEMESTRE\PROGRAMACIÓN WEB\OBRAS_DJANGO\paginaweb\PruebaDeisne\products\models.py changed, reloading.
+2022-07-11 17:38:55,506 [INFO] C:\Users\Administrador\Documents\Pagina_django\nuevo\paginaweb\PruebaDeisne\crudProducts\urls.py changed, reloading.
+2022-07-11 17:39:01,568 [WARNING] Not Found: /index
+2022-07-11 17:39:35,727 [INFO] C:\Users\Administrador\Documents\Pagina_django\nuevo\paginaweb\PruebaDeisne\crudProducts\urls.py changed, reloading.
+2022-07-11 17:40:20,955 [INFO] C:\Users\Administrador\Documents\Pagina_django\nuevo\paginaweb\PruebaDeisne\crudProducts\urls.py changed, reloading.
+2022-07-11 17:40:26,468 [WARNING] Not Found: /index
+2022-07-11 17:40:34,133 [INFO] C:\Users\Administrador\Documents\Pagina_django\nuevo\paginaweb\PruebaDeisne\crudProducts\urls.py changed, reloading.
