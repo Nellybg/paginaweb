@@ -4,7 +4,8 @@ $(document).ready(function () {
             anno:{
                 required: true,
                 minlength: 4,
-                maxlength: 4
+                maxlength: 4,
+                number: true
             },
             envio:{
                 required: true,
@@ -83,7 +84,8 @@ $(document).ready(function () {
             anno:{
                 required: "Ingrese el año de la obra",
                 minlength: "Debe tener 4 digitos",
-                maxlength: "Debe tener 4 digitos"
+                maxlength: "Debe tener 4 digitos",
+                number: "El año debe ser en números"
             },
             envio:{
                 required: "Ingrese la agencia de envios",
