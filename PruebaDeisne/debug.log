@@ -460,3 +460,30 @@ django.db.utils.ProgrammingError: (1146, "Table 'obras.products' doesn't exist")
 2022-07-10 21:48:18,038 [INFO] b'csrfmiddlewaretoken=0oFXtO6fcDPzGOSHdGccRweKZmWCVC168HTEdBgBpMydaqpdAXy7iQE4hHRu6PIb&nombre=zi&artista=zi&valor=128&tipo_obra=zi&descripcion=zi&pathImagen=img%2Fproductos%2Fproducto1.jpg&agree=agree'
 2022-07-10 21:48:18,039 [INFO] aca 1
 2022-07-10 21:48:18,041 [INFO] True
+2022-07-10 22:24:40,991 [WARNING] Not Found: /favicon.ico
+2022-07-10 22:25:05,127 [INFO] b'csrfmiddlewaretoken=Q9AADL1K747N1riyiFnB5Gbuw8QUEtN4YsOhnyb6kdQrv3P4FWJww0BOOtLMPGu9&nombre=adad&artista=as&valor=1000&tipo_obra=asad&descripcion=ad&pathImagen=img%2Fproductos%2Fproducto1.jpg&agree=agree'
+2022-07-10 22:25:05,128 [INFO] aca 1
+2022-07-10 22:25:05,129 [INFO] True
+2022-07-10 22:33:58,107 [INFO] b'csrfmiddlewaretoken=7dfSwQUoJpGEBgBO6Ks6gpqCnK7UfEWgfwtzgD4KWypi5S8kt1O1HJQWF52MqRDl&nombre=saas&artista=asa&valor=12312&tipo_obra=asa&descripcion=asas&pathImagen=img%2Fproductos%2Fproducto1.jpg&agree=agree'
+2022-07-10 22:33:58,107 [INFO] aca 1
+2022-07-10 22:33:58,107 [INFO] True
+2022-07-10 22:34:10,417 [INFO] b'csrfmiddlewaretoken=9Qp6hwpGMPYeDZSLUm0cWeS95JnJiBveh9DN1jz2ZYHS7BphhDm7nyitn4iBtOcj&nombre=asas&artista=asas&valor=11111&tipo_obra=asa&descripcion=asas&pathImagen=img%2Fproductos%2Fproducto1.jpg&agree=agree'
+2022-07-10 22:34:10,417 [INFO] aca 1
+2022-07-10 22:34:10,417 [INFO] True
+2022-07-10 22:59:06,614 [INFO] b'csrfmiddlewaretoken=MyEFEFx4XTWxFSvC0aMzhyRkSKhYJ6AvURSmosHqa2Fb9u28nr8uIShEa5cQUjhA&nombreObra=&artista=&valor=1&tipo_obra=&descripcion=&pathImagen='
+2022-07-10 22:59:06,615 [INFO] aca 1
+2022-07-10 22:59:06,617 [INFO] False
+2022-07-10 23:03:48,622 [INFO] b'csrfmiddlewaretoken=WaF2wOqApYvrUKA0xA4tYcgJeqSF5RbL4tTJgBAWC7e5om7wURqopwG3wLNxg4SQ&nombreObra=&artista=&valor=dds&tipo_obra=&descripcion=&pathImagen='
+2022-07-10 23:03:48,623 [INFO] aca 1
+2022-07-10 23:03:48,624 [INFO] False
+2022-07-10 23:03:52,809 [INFO] b'csrfmiddlewaretoken=WaF2wOqApYvrUKA0xA4tYcgJeqSF5RbL4tTJgBAWC7e5om7wURqopwG3wLNxg4SQ&nombreObra=&artista=&valor=dds&tipo_obra=&descripcion=&pathImagen='
+2022-07-10 23:03:52,809 [INFO] aca 1
+2022-07-10 23:03:52,811 [INFO] False
+2022-07-10 23:07:31,562 [INFO] b'csrfmiddlewaretoken=OKaMyXyW5I2Ko8rLffo0Zo4Haf0yCvhwW3otiKIiiRLoSKYhCwKVqIu1sAVqNIYB&nombreObra=&artista=&valor=111&tipo_obra=&descripcion=&pathImagen='
+2022-07-10 23:07:31,562 [INFO] aca 1
+2022-07-10 23:07:31,563 [INFO] False
+2022-07-10 23:42:15,953 [WARNING] Not Found: /producto-1/2
+2022-07-10 23:46:32,642 [WARNING] Not Found: /edit_copy
+2022-07-10 23:46:52,845 [WARNING] Not Found: /edit_copy/3
+2022-07-10 23:47:03,257 [WARNING] Not Found: /edit_copy
+2022-07-10 23:47:59,216 [WARNING] Not Found: /edit_copy
