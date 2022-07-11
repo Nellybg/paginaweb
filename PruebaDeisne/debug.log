@@ -1589,3 +1589,7 @@ products.models.Products.DoesNotExist: Products matching query does not exist.
 2022-07-11 17:38:40,811 [WARNING] Not Found: /product-detail/tienda
 2022-07-11 17:38:44,422 [WARNING] Not Found: /product-detail/index
 >>>>>>> 8e335e6250e5758e38795ee95df3b6342489162a
+2022-07-11 17:45:22,115 [WARNING] Not Found: /product-detail/index
+2022-07-11 17:45:28,999 [WARNING] Not Found: /product-detail/tienda
+2022-07-11 17:45:33,222 [WARNING] Not Found: /product-detail/index
+2022-07-11 17:45:36,175 [WARNING] Not Found: /product-detail/tienda
