@@ -454,3 +454,9 @@ Traceback (most recent call last):
   File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
     _mysql.connection.query(self, query)
 django.db.utils.ProgrammingError: (1146, "Table 'obras.products' doesn't exist")
+2022-07-10 21:47:19,968 [INFO] b'csrfmiddlewaretoken=XLG0w84QM5NGgdxhKfIqFG8G95wtJuO154UHgVecZewkKP4N7w4l60y0rqrlUHv6&nombre=Si&artista=si&valor=100000&tipo_obra=Si&descripcion=si&pathImagen=img%2Fproductos%2Fproducto1.jpg&agree=agree'
+2022-07-10 21:47:19,970 [INFO] aca 1
+2022-07-10 21:47:19,972 [INFO] True
+2022-07-10 21:48:18,038 [INFO] b'csrfmiddlewaretoken=0oFXtO6fcDPzGOSHdGccRweKZmWCVC168HTEdBgBpMydaqpdAXy7iQE4hHRu6PIb&nombre=zi&artista=zi&valor=128&tipo_obra=zi&descripcion=zi&pathImagen=img%2Fproductos%2Fproducto1.jpg&agree=agree'
+2022-07-10 21:48:18,039 [INFO] aca 1
+2022-07-10 21:48:18,041 [INFO] True
