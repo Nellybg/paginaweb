@@ -1589,8 +1589,25 @@ products.models.Products.DoesNotExist: Products matching query does not exist.
 2022-07-11 17:38:40,811 [WARNING] Not Found: /product-detail/tienda
 2022-07-11 17:38:44,422 [WARNING] Not Found: /product-detail/index
 >>>>>>> 8e335e6250e5758e38795ee95df3b6342489162a
+<<<<<<< HEAD
+2022-07-11 17:46:06,748 [WARNING] Not Found: /product-detail/tienda
+2022-07-11 17:46:41,454 [WARNING] Not Found: /product-detail/contacto
+2022-07-11 17:47:07,651 [WARNING] Not Found: /PruebaDeisne/products/templates/tienda.html
+2022-07-11 17:47:44,626 [WARNING] Not Found: /PruebaDeisne/products/templates/tienda.html
+2022-07-11 17:47:52,539 [WARNING] Not Found: /product-detail/contacto
+2022-07-11 17:47:55,911 [WARNING] Not Found: /product-detail/index
+2022-07-11 17:48:42,761 [WARNING] Not Found: /product-detail/tienda
+2022-07-11 17:49:51,465 [WARNING] Not Found: /product-detail/contacto
+2022-07-11 17:50:51,032 [WARNING] Not Found: /login
+2022-07-11 17:51:20,656 [WARNING] Not Found: /product-detail/carrito.html
+2022-07-11 17:51:39,129 [WARNING] Not Found: /carrito.html
+2022-07-11 17:51:49,124 [WARNING] Not Found: /carrito.html
+2022-07-11 17:51:52,024 [WARNING] Not Found: /carrito.html
+2022-07-11 17:52:18,053 [WARNING] Not Found: /singin
+=======
 2022-07-11 17:45:22,115 [WARNING] Not Found: /product-detail/index
 2022-07-11 17:45:28,999 [WARNING] Not Found: /product-detail/tienda
 2022-07-11 17:45:33,222 [WARNING] Not Found: /product-detail/index
 2022-07-11 17:45:36,175 [WARNING] Not Found: /product-detail/tienda
 2022-07-11 17:49:15,325 [WARNING] Not Found: /edit/index
+>>>>>>> efa0af10d7b6897369dbcd00f1de80f387ad53c5
