@@ -78,22 +78,40 @@
         <table class="table table-striped table-bordered table-sm">
             <thead class="thead-dark">
                 <tr>
-                    <th>Products ID</th>
-                    <th>Products Name</th>
-                    <th>Products Description</th>
-                    <th>Products Price</th>
-                    <th>Actions</th>
+                    <th>Folio</th>
+                    <th>Código</th>
+                    <th>Nombre obra</th>
+                    <th>Tipo obra</th>
+                    <th>Artista</th>
+                    <th>Año</th>
+                    <th>Valor</th>
+                    <th>Técnica</th>
+                    <th>Tipo obra</th>
+                    <th>Descripción</th>
+                    <th>Otros detalles</th>
+                    <th>Dimensiones</th>
+                    <th>Envío</th>
+                    <th>Ruta imagen</th>
+                    <th>Acciones</th>
                 </tr>
             </thead>
             <tbody>
                 {% for products in productss %}
                 <tr>
                     <td>{{ products.id }}</td>
+                    <td>{{ products.codigoProducto }}</td>
                     <td>{{ products.nombre }}</td>
+                    <td>{{ products.tipo_obra }}</td>
                     <td>{{ products.artista }}</td>
-                    <td>{{ products.valor }}</td>
+                    <td>{{ products.anno }}</td>
+                    <td>{{ products.valor }}</td>                  
+                    <td>{{ products.tecnica }}</td>
                     <td>{{ products.tipo_obra }}</td>
                     <td>{{ products.descripcion }}</td>
+                    <td>{{ products.otros_detalles }}</td>
+                    <td>{{ products.dimensiones }}</td>
+                    <td>{{ products.envio }}</td>
+                    <td>{{ products.pathImagen }}</td>
                     <td>
                         <a href="/edit/{{ products.id }}"><span class="glyphicon glyphicon-pencil">Edit</span></a>
                         <a href="/delete/{{ products.id }}">Delete</a>
