@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/cards.css' %}">
- 
+
     <title>Inicio - Grupo Cero</title>
 </head>
 
@@ -81,15 +81,16 @@
     </nav><br><br>
 
     <div class="resumen-producto">
-        <h1 class="text-center" style="padding-top: 75px;">Kirby al óleo, 2016</h1>
-        <h2 class="text-center">por Masahiro Sakurai</h2>
-        <p class="text-center">Óleo en lienzo<br>
-            80x70 cms.</p>
+        <h1 class="text-center" style="padding-top: 75px;">{{ products.nombre}} {{ products.anno }}</h1>
+        <h2 class="text-center">{{ products.artista }}</h2>
+        <p class="text-center">{{ products.tecnica }}<br>
+            {{ products.dimensiones }}</p>
         <div class="cuerpo-resumen">
             <div class="row">
                 <div class="col-sm-6">
                     <div class="imagen-producto">
-                        <img class="rounded mx-auto d-block" src="{% static 'img/productos/producto1.jpg' %}" alt="cuadro de kirby" style="width: 52%">
+                        <img class="rounded mx-auto d-block" src="{% static 'img/productos/producto1.jpg' %}"
+                            alt="cuadro de kirby" style="width: 52%">
                     </div>
                 </div>
 
@@ -98,29 +99,29 @@
                     <ul class="detalles-obra-lista">
                         <li>
                             <div class="titulo">CÓDIGO PRODUCTO</div>
-                            <div class="info">1100</div><br>
+                            <div class="info">{{ products.codigoProducto }}</div>
                         </li>
 
 
                         <li>
                             <div class="titulo">TÉCNICA</div>
-                            <div class="info">Óleo en Lienzo</div><br>
+                            <div class="info">{{ products.tecnica }}</div>
                         </li>
 
                         <li>
                             <div class="titulo">OTROS DETALLES</div>
-                            <div class="info">Obra estirada sobre bastidor. Lista para colgar. Enmarcación bajo pedido.
-                            </div><br>
+                            <div class="info">{{ products.otros_detalles }}
+                            </div>
                         </li>
 
                         <li>
                             <div class="titulo">DIMENSIONES</div>
-                            <div class="info">80X70 cms</div><br>
+                            <div class="info">{{ products.dimensiones }}</div>
                         </li>
 
                         <li>
                             <div class="titulo">ENVÍO</div>
-                            <div class="info">por transportistas especializados.</div><br>
+                            <div class="info">{{ products.dimensiones }}</div>
                         </li>
 
                     </ul>
@@ -141,7 +142,7 @@
                         <br>
                         <div class="precio-producto">
                             <h3>PRECIO</h3>
-                            <h4>$50.000</h4>
+                            <h4>${{ products.valor }}</h4>
                         </div>
                         <div class="login-box d-flex mx-4 mb-3 mb-lg-4">
                             <button type="Agregar al carrito" class="btn btn-primary btn-lg mx-auto">Agregar al

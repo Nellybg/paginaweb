@@ -98,7 +98,7 @@
                                         <div class="d-flex flex-row align-items-center mb-4">
                                             <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                                             <div class="form-outline flex-fill mb-0">
-                                                <label class="form-label" for="nombre">Nombre</label>
+                                                <label class="form-label" for="nombre">Nombre Obra</label>
                                                 <input type="text" id="nombre" name="nombre" class="form-control"
                                                     required>
                                                  {{ form.nombre }} </input>
@@ -119,9 +119,9 @@
                                             <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                                             <div class="form-outline flex-fill mb-0">
                                                 <label class="form-label" for="valor">Valor</label>
-                                                <input type="text" id="rut" name="valor" class="form-control">
+                                                <input type="text" id="valor" name="valor" class="form-control">
                                                 {{ form.valor }} </input>    
-                                                <p class="text" id="msgerror"></p>
+                                                
                                             </div>
                                         </div>
 
@@ -148,10 +148,70 @@
                                         <div class="d-flex flex-row align-items-center mb-4">
                                             <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                                             <div class="form-outline flex-fill mb-0">
-                                                <label class="form-label" for="pathImagen">Path Imagen</label>
+                                                <label class="form-label" for="pathImagen">Ruta Imagen (Path)</label>
                                                 <input type="text" id="pathImagen" name="pathImagen"
                                                     class="form-control" required>
                                                     {{ form.pathImagen }} </input>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex flex-row align-items-center mb-4">
+                                            <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                                            <div class="form-outline flex-fill mb-0">
+                                                <label class="form-label" for="codigoProducto">Código Producto</label>
+                                                <input type="text" id="codigoProducto" name="codigoProducto"
+                                                    class="form-control" required>
+                                                    {{ form.codigoProducto }} </input>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex flex-row align-items-center mb-4">
+                                            <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                                            <div class="form-outline flex-fill mb-0">
+                                                <label class="form-label" for="tecnica">Técnica</label>
+                                                <input type="text" id="tecnica" name="tecnica"
+                                                    class="form-control" required>
+                                                    {{ form.tecnica }} </input>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex flex-row align-items-center mb-4">
+                                            <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                                            <div class="form-outline flex-fill mb-0">
+                                                <label class="form-label" for="otros_detalles">Otros Detalles</label>
+                                                <input type="text" id="otros_detalles" name="otros_detalles"
+                                                    class="form-control" required>
+                                                    {{ form.otros_detalles }} </input>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex flex-row align-items-center mb-4">
+                                            <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                                            <div class="form-outline flex-fill mb-0">
+                                                <label class="form-label" for="dimensiones">Dimensiones</label>
+                                                <input type="text" id="dimensiones" name="dimensiones"
+                                                    class="form-control" required>
+                                                    {{ form.dimensiones }} </input>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex flex-row align-items-center mb-4">
+                                            <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                                            <div class="form-outline flex-fill mb-0">
+                                                <label class="form-label" for="envio">Envio</label>
+                                                <input type="text" id="envio" name="envio"
+                                                    class="form-control" required>
+                                                    {{ form.envio }} </input>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex flex-row align-items-center mb-4">
+                                            <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                                            <div class="form-outline flex-fill mb-0">
+                                                <label class="form-label" for="anno">Año</label>
+                                                <input type="text" id="anno" name="anno"
+                                                    class="form-control" required>
+                                                    {{ form.anno }} </input>
                                             </div>
                                         </div>
 

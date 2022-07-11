@@ -9,5 +9,11 @@ class Products(models.Model):
     valor = models.IntegerField()
     descripcion = models.TextField(max_length=50)
     pathImagen = models.TextField(max_length=50)
+    codigoProducto = models.IntegerField()
+    tecnica = models.TextField(max_length=50)
+    otros_detalles = models.TextField(max_length=50)
+    dimensiones = models.TextField(max_length=50)
+    envio = models.TextField(max_length=50)
+    anno = models.IntegerField()
     class Meta:  
         db_table = "products"

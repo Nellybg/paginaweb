@@ -1,3 +1,912 @@
 2022-07-10 16:08:14,254 [INFO] b'csrfmiddlewaretoken=kaiPsxjncSGzcHifu8wDAMvNq8UPyXwh4zLeHASWRDHlRg0DmRBBh80UBDmEGH3e&nombre=Batman&artista=Neil+Adams&valor=40000&tipo_obra=Pintura+2&descripcion=Pintura+bkn&pathImagen=img%2Fproductos%2Fproducto1.jpg&agree=agree'
 2022-07-10 16:08:14,254 [INFO] aca 1
 2022-07-10 16:08:14,255 [INFO] True
+2022-07-10 17:23:23,167 [WARNING] Not Found: /
+2022-07-10 17:26:18,701 [INFO] b'csrfmiddlewaretoken=PurK3H2HMyHvYC6uU6rC3WBdnE8aYfXzy6uBD4OUvBu7EzVnN6P4I8EneIHRXZ4G&nombre=Kirby+al+%C3%93leo&artista=Mario+Casta%C3%B1eda&valor=100000&tipo_obra=sdfnsdlfnld&descripcion=sdlkfsndlf&pathImagen=img%2Fproductos%2Fproducto1.jpg&agree=agree'
+2022-07-10 17:26:18,702 [INFO] aca 1
+2022-07-10 17:26:18,703 [INFO] True
+2022-07-10 18:28:52,354 [WARNING] Not Found: /carrito.html
+2022-07-10 18:50:32,257 [INFO] G:\Mi unidad\3° SEMESTRE\PROGRAMACIÓN WEB\PAGINA_DJANGO\paginaweb\PruebaDeisne\products\models.py changed, reloading.
+2022-07-10 19:08:59,069 [ERROR] Internal Server Error: /show
+Traceback (most recent call last):
+  File "C:\Users\dkn_d\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\dkn_d\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\dkn_d\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\dkn_d\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\dkn_d\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'products.cod_prod' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\dkn_d\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\dkn_d\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "G:\Mi unidad\3° SEMESTRE\PROGRAMACIÓN WEB\PAGINA_DJANGO\paginaweb\PruebaDeisne\products\views.py", line 69, in show
+    return render(request,"show.html",{'productss':productss})
+  File "C:\Users\dkn_d\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\dkn_d\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\dkn_d\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\dkn_d\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\dkn_d\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\dkn_d\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\dkn_d\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\dkn_d\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\dkn_d\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Users\dkn_d\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\Users\dkn_d\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\dkn_d\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\dkn_d\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\dkn_d\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\dkn_d\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\dkn_d\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\dkn_d\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\dkn_d\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\dkn_d\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\dkn_d\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\dkn_d\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\dkn_d\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\dkn_d\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'products.cod_prod' in 'field list'")
+2022-07-10 19:09:14,502 [WARNING] Not Found: /show.html
+2022-07-10 20:00:40,972 [WARNING] Not Found: /
+2022-07-10 20:01:10,365 [INFO] b'csrfmiddlewaretoken=C1GihnnDgthQ67s3fVOZPDPJvyeKvXMDlDJ9RK9QZw4sM4hW8VcruPSTmCNruHTK&nombre=Kirby+al+%C3%93leo&artista=Masahiro+Sakurai&valor=50000&tipo_obra=%C3%93leo+en+Lienzo&descripcion=Lorem+ipsum+dolor+sit+amet+consectetur%2C+++++++++++++++++++++++++++++++++adipisicing+elit.+Illo+laboriosam+odit+vitae+sint%2C+quae+deleniti.&pathImagen=img%2Fproductos%2Fproducto1.jpg&agree=agree'
+2022-07-10 20:01:10,367 [INFO] aca 1
+2022-07-10 20:01:10,368 [INFO] False
+2022-07-10 20:18:59,389 [INFO] b'csrfmiddlewaretoken=C1GihnnDgthQ67s3fVOZPDPJvyeKvXMDlDJ9RK9QZw4sM4hW8VcruPSTmCNruHTK&nombre=Kirby+al+%C3%93leo&artista=Masahiro+Sakurai&valor=50000&tipo_obra=%C3%93leo+en+Lienzo&descripcion=Lorem+ipsum+dolor+sit+amet+consectetur%2C+++++++++++++++++++++++++++++++++adipisicing+elit.+Illo+laboriosam+odit+vitae+sint%2C+quae+deleniti.&pathImagen=img%2Fproductos%2Fproducto1.jpg&agree=agree'
+2022-07-10 20:18:59,397 [INFO] aca 1
+2022-07-10 20:18:59,399 [INFO] False
+2022-07-10 20:19:23,849 [INFO] b'csrfmiddlewaretoken=YajHdLazMCgiUZAfU8vuvsRmycauYqzLHMmyN8WMvF3UAWp8N8TWaEUwpgJbXaGS&nombre=Kirby+al+%C3%93leo&artista=Masahiro+Sakurai&valor=50000&tipo_obra=%C3%93leo+en+Lienzo&descripcion=Lorem+ipsum+dolor+sit+amet+consectetur%2C+++++++++++++++++++++++++++++++++adipisicing+elit.+Illo+laboriosam+odit+vitae+sint%2C+quae+deleniti.&pathImagen=img%2Fproductos%2Fproducto1.jpg&agree=agree'
+2022-07-10 20:19:23,853 [INFO] aca 1
+2022-07-10 20:19:23,855 [INFO] False
+2022-07-10 20:20:58,422 [INFO] b'csrfmiddlewaretoken=YajHdLazMCgiUZAfU8vuvsRmycauYqzLHMmyN8WMvF3UAWp8N8TWaEUwpgJbXaGS&nombre=Kirby+al+%C3%93leo&artista=Masahiro+Sakurai&valor=50000&tipo_obra=%C3%93leo+en+Lienzo&descripcion=Lorem+ipsum+dolordeleniti.&pathImagen=img%2Fproductos%2Fproducto1.jpg&agree=agree'
+2022-07-10 20:20:58,424 [INFO] aca 1
+2022-07-10 20:20:58,426 [INFO] True
+2022-07-10 20:26:03,834 [INFO] b'csrfmiddlewaretoken=fLyMRZlm6Rf9NQiRDQGsl0N1k6XPoj4kYnBDrm7zPU2LtN7KwQ4U0cQbbawwn3br&nombre=Kirby+al+%C3%93leo&artista=Masahiro+Sakurai&valor=50000&tipo_obra=%C3%93leo+en+Lienzo&descripcion=sdlkfsndlf&pathImagen=img%2Fproductos%2Fproducto1.jpg&agree=agree'
+2022-07-10 20:26:03,835 [INFO] aca 1
+2022-07-10 20:26:03,838 [INFO] True
+2022-07-10 20:32:53,686 [WARNING] Not Found: /
+2022-07-10 20:49:05,428 [INFO] b'csrfmiddlewaretoken=uPedRmJ7pEol7e6inGCiNgqJDgmQ9zRIdrh4rJvk8HbXNbVbgG0KsstTukVx8jYP&nombre=Kirby+al+%C3%93leo&artista=Masahiro+Sakurai&valor=50000&tipo_obra=%C3%93leo+en+Lienzo&descripcion=Lorem+ipsum+dolor+sit+amet+consectetur&pathImagen=img%2Fproductos%2Fproducto1.jpg&agree=agree'
+2022-07-10 20:49:05,428 [INFO] aca 1
+2022-07-10 20:49:05,428 [INFO] True
+2022-07-10 20:49:26,590 [WARNING] Not Found: /edit
+2022-07-10 20:51:31,216 [INFO] b'csrfmiddlewaretoken=XGMTSVNcnCsfzUHQA1UOoGGKyaQrFWsfGiPKsizp6FfRfRwJt1ig3SJUpep8EGzm&nombre=Kirby+al+%C3%93leo&artista=Masahiro+Sakurai&valor=50000&tipo_obra=%C3%93leo+en+Lienzo&descripcion=sdlkfsndlf&pathImagen=img%2Fproductos%2Fproducto1.jpg&agree=agree'
+2022-07-10 20:51:31,216 [INFO] aca 1
+2022-07-10 20:51:31,216 [INFO] True
+2022-07-10 20:58:41,768 [WARNING] Not Found: /carrito.html
+2022-07-10 20:58:45,538 [WARNING] Not Found: /carrito.html
+2022-07-10 21:41:45,397 [ERROR] Internal Server Error: /tienda
+Traceback (most recent call last):
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'obras.products' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrador\Documents\django\paginaweb\PruebaDeisne\products\views.py", line 33, in tienda
+    return render(request,'tienda.html',{'productss':productss})
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'obras.products' doesn't exist")
+2022-07-10 21:41:47,594 [ERROR] Internal Server Error: /tienda
+Traceback (most recent call last):
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'obras.products' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrador\Documents\django\paginaweb\PruebaDeisne\products\views.py", line 33, in tienda
+    return render(request,'tienda.html',{'productss':productss})
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'obras.products' doesn't exist")
+2022-07-10 21:41:47,735 [ERROR] Internal Server Error: /tienda
+Traceback (most recent call last):
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'obras.products' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrador\Documents\django\paginaweb\PruebaDeisne\products\views.py", line 33, in tienda
+    return render(request,'tienda.html',{'productss':productss})
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'obras.products' doesn't exist")
+2022-07-10 21:41:47,884 [ERROR] Internal Server Error: /tienda
+Traceback (most recent call last):
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'obras.products' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrador\Documents\django\paginaweb\PruebaDeisne\products\views.py", line 33, in tienda
+    return render(request,'tienda.html',{'productss':productss})
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'obras.products' doesn't exist")
+2022-07-10 21:41:54,583 [ERROR] Internal Server Error: /tienda
+Traceback (most recent call last):
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'obras.products' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Administrador\Documents\django\paginaweb\PruebaDeisne\products\views.py", line 33, in tienda
+    return render(request,'tienda.html',{'productss':productss})
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Users\Administrador\AppData\Local\Programs\Python\Python310\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.ProgrammingError: (1146, "Table 'obras.products' doesn't exist")
+2022-07-10 21:47:19,968 [INFO] b'csrfmiddlewaretoken=XLG0w84QM5NGgdxhKfIqFG8G95wtJuO154UHgVecZewkKP4N7w4l60y0rqrlUHv6&nombre=Si&artista=si&valor=100000&tipo_obra=Si&descripcion=si&pathImagen=img%2Fproductos%2Fproducto1.jpg&agree=agree'
+2022-07-10 21:47:19,970 [INFO] aca 1
+2022-07-10 21:47:19,972 [INFO] True
+2022-07-10 21:48:18,038 [INFO] b'csrfmiddlewaretoken=0oFXtO6fcDPzGOSHdGccRweKZmWCVC168HTEdBgBpMydaqpdAXy7iQE4hHRu6PIb&nombre=zi&artista=zi&valor=128&tipo_obra=zi&descripcion=zi&pathImagen=img%2Fproductos%2Fproducto1.jpg&agree=agree'
+2022-07-10 21:48:18,039 [INFO] aca 1
+2022-07-10 21:48:18,041 [INFO] True
+2022-07-11 14:11:20,052 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\ahorasiquesi\paginaweb\PruebaDeisne\crudProducts\settings.py changed, reloading.
+2022-07-11 14:15:10,206 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\ahorasiquesi\paginaweb\PruebaDeisne\products\models.py changed, reloading.
+2022-07-11 14:15:18,594 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\ahorasiquesi\paginaweb\PruebaDeisne\products\models.py changed, reloading.
+2022-07-11 14:15:28,058 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\ahorasiquesi\paginaweb\PruebaDeisne\products\models.py changed, reloading.
+2022-07-11 14:15:35,421 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\ahorasiquesi\paginaweb\PruebaDeisne\products\models.py changed, reloading.
+2022-07-11 14:15:57,889 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\ahorasiquesi\paginaweb\PruebaDeisne\products\models.py changed, reloading.
+2022-07-11 14:21:25,408 [INFO] b'csrfmiddlewaretoken=YhEzD4kHzRTosGuJwfctXnwRoDnejFVuIG7YS7TgeCUa7fc7oYhrEJ1Yz8P3rpsr&nombreObra=Batman&artista=Neil+Adams&valor=40000&tipo_obra=Pintura&descripcion=Pintura+bkn&pathImagen=img%2Fproductos%2Fproducto1.jpg&codigoProducto=25558&tecnica=Oleo&otros_detalles=Es+muy+linda&dimensiones=30x30&envio=Aereo&a%C3%B1o=2022&agree=agree'
+2022-07-11 14:21:25,409 [INFO] aca 1
+2022-07-11 14:21:25,410 [INFO] False
+2022-07-11 14:32:18,000 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\ahorasiquesi\paginaweb\PruebaDeisne\products\models.py changed, reloading.
+2022-07-11 14:33:02,590 [ERROR] Internal Server Error: /tienda
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python39\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Python39\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'products.anno' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jorge\Documents\Nelly Becerra\ahorasiquesi\paginaweb\PruebaDeisne\products\views.py", line 33, in tienda
+    return render(request,'tienda.html',{'productss':productss})
+  File "C:\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Python39\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Python39\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python39\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python39\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Python39\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'products.anno' in 'field list'")
+2022-07-11 14:33:05,845 [ERROR] Internal Server Error: /tienda
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python39\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Python39\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'products.anno' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jorge\Documents\Nelly Becerra\ahorasiquesi\paginaweb\PruebaDeisne\products\views.py", line 33, in tienda
+    return render(request,'tienda.html',{'productss':productss})
+  File "C:\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Python39\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Python39\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python39\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python39\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Python39\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'products.anno' in 'field list'")
+2022-07-11 14:33:35,728 [ERROR] Internal Server Error: /tienda
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python39\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Python39\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'products.anno' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jorge\Documents\Nelly Becerra\ahorasiquesi\paginaweb\PruebaDeisne\products\views.py", line 33, in tienda
+    return render(request,'tienda.html',{'productss':productss})
+  File "C:\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Python39\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Python39\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python39\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python39\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Python39\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'products.anno' in 'field list'")
+2022-07-11 14:34:06,175 [ERROR] Internal Server Error: /tienda
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python39\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Python39\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'products.anno' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jorge\Documents\Nelly Becerra\ahorasiquesi\paginaweb\PruebaDeisne\products\views.py", line 33, in tienda
+    return render(request,'tienda.html',{'productss':productss})
+  File "C:\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Python39\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Python39\lib\site-packages\django\template\backends\django.py", line 62, in render
+    return self.template.render(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 958, in render_annotated
+    return self.render(context)
+  File "C:\Python39\lib\site-packages\django\template\defaulttags.py", line 194, in render
+    len_values = len(values)
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 302, in __len__
+    self._fetch_all()
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Python39\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "C:\Python39\lib\site-packages\django\db\models\sql\compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python39\lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Python39\lib\site-packages\django\db\backends\utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python39\lib\site-packages\django\db\backends\mysql\base.py", line 75, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python39\lib\site-packages\MySQLdb\cursors.py", line 206, in execute
+    res = self._query(query)
+  File "C:\Python39\lib\site-packages\MySQLdb\cursors.py", line 319, in _query
+    db.query(q)
+  File "C:\Python39\lib\site-packages\MySQLdb\connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+django.db.utils.OperationalError: (1054, "Unknown column 'products.anno' in 'field list'")
+2022-07-11 14:35:13,556 [INFO] b'csrfmiddlewaretoken=RZjg9il2XaU2cL1ER95Y3ff3lJeowAhaBoMFolUBCVVORkJ2JSaWKBKaweGdEkO7&nombreObra=Batman&artista=Neil+Adams&valor=40000&tipo_obra=Pintura&descripcion=Pintura+bkn&pathImagen=img%2Fproductos%2Fproducto1.jpg&codigoProducto=2555&tecnica=Oleo&otros_detalles=Es+muy+linda&dimensiones=30x30&envio=Aereo&anno=2020&agree=agree'
+2022-07-11 14:35:13,557 [INFO] aca 1
+2022-07-11 14:35:13,558 [INFO] False
+2022-07-11 14:36:24,861 [INFO] b'csrfmiddlewaretoken=RZjg9il2XaU2cL1ER95Y3ff3lJeowAhaBoMFolUBCVVORkJ2JSaWKBKaweGdEkO7&nombreObra=Batman&artista=Neil+Adams&valor=40000&tipo_obra=Pintura&descripcion=Pintura+bkn&pathImagen=img%2Fproductos%2Fproducto1.jpg&codigoProducto=2555&tecnica=Oleo&otros_detalles=Es+muy+linda&dimensiones=30x30&envio=Aereo&anno=2020&agree=agree'
+2022-07-11 14:36:24,861 [INFO] aca 1
+2022-07-11 14:36:24,862 [INFO] False
+2022-07-11 14:38:33,451 [INFO] b'csrfmiddlewaretoken=RZjg9il2XaU2cL1ER95Y3ff3lJeowAhaBoMFolUBCVVORkJ2JSaWKBKaweGdEkO7&nombreObra=Batman&artista=Neil+Adams&valor=40000&tipo_obra=Pintura&descripcion=Pintura+bkn&pathImagen=img%2Fproductos%2Fproducto1.jpg&codigoProducto=2555&tecnica=Oleo&otros_detalles=Es+muy+linda&dimensiones=30x30&envio=Aereo&anno=2020&agree=agree'
+2022-07-11 14:38:33,452 [INFO] aca 1
+2022-07-11 14:38:33,453 [INFO] False
+2022-07-11 14:38:56,575 [INFO] b'csrfmiddlewaretoken=IBX8QqHvRZreEnlo6ZjJjblhDyD1UhxHs0qx5tg4wKs0jW3MYIoH0xQoO35Q214E&nombreObra=Batman&artista=Neil+Adams&valor=40000&tipo_obra=Pintura&descripcion=Pintura+bkn&pathImagen=img%2Fproductos%2Fproducto1.jpg&codigoProducto=255&tecnica=Oleo&otros_detalles=Es+muy+linda&dimensiones=30x30&envio=Aereo&anno=2020&agree=agree'
+2022-07-11 14:38:56,575 [INFO] aca 1
+2022-07-11 14:38:56,576 [INFO] False
+2022-07-11 14:39:51,632 [INFO] b'csrfmiddlewaretoken=IBX8QqHvRZreEnlo6ZjJjblhDyD1UhxHs0qx5tg4wKs0jW3MYIoH0xQoO35Q214E&nombreObra=Batman&artista=Neil+Adams&valor=40000&tipo_obra=Pintura&descripcion=Pintura+bkn&pathImagen=img%2Fproductos%2Fproducto1.jpg&codigoProducto=255&tecnica=Oleo&otros_detalles=Es+muy+linda&dimensiones=30x30&envio=Aereo&anno=2020&agree=agree'
+2022-07-11 14:39:51,633 [INFO] aca 1
+2022-07-11 14:39:51,633 [INFO] False
+2022-07-11 14:40:16,295 [INFO] b'csrfmiddlewaretoken=KyIEgPuFWxPc2AWluJHM8OzKFtTWzT5fuXb3vS3eBiQYH9EJmsMKPa4RQYlLHDCc&nombreObra=Batman&artista=Neil+Adams+2&valor=40000&tipo_obra=Pintura&descripcion=Pintura+bkn&pathImagen=img%2Fproductos%2Fproducto1.jpg&codigoProducto=255&tecnica=Oleo&otros_detalles=Es+muy+linda&dimensiones=30x30&envio=Aereo&anno=2020&agree=agree'
+2022-07-11 14:40:16,296 [INFO] aca 1
+2022-07-11 14:40:16,297 [INFO] False
+2022-07-11 14:40:50,129 [INFO] b'csrfmiddlewaretoken=KyIEgPuFWxPc2AWluJHM8OzKFtTWzT5fuXb3vS3eBiQYH9EJmsMKPa4RQYlLHDCc&nombreObra=Batman&artista=Neil+Adams+2&valor=40000&tipo_obra=Pintura&descripcion=Pintura+bkn&pathImagen=img%2Fproductos%2Fproducto1.jpg&codigoProducto=255&tecnica=Oleo&otros_detalles=Es+muy+linda&dimensiones=30x30&envio=Aereo&anno=2020&agree=agree'
+2022-07-11 14:40:50,130 [INFO] aca 1
+2022-07-11 14:40:50,131 [INFO] False
+2022-07-11 14:41:17,485 [INFO] b'csrfmiddlewaretoken=JaWg7J9cKi7GDTiti9Rq5ffMMWlAwdUCtzpFmMILp38sis0RaSWoMBKTXrNpEXrz&nombreObra=Batman&artista=Neil+Adams+2&valor=400002&tipo_obra=Pintura&descripcion=Pintura+bkn&pathImagen=img%2Fproductos%2Fproducto1.jpg&codigoProducto=255&tecnica=Oleo&otros_detalles=Es+muy+linda&dimensiones=30x30&envio=Aereo&anno=2020&agree=agree'
+2022-07-11 14:41:17,486 [INFO] aca 1
+2022-07-11 14:41:17,487 [INFO] False
+2022-07-11 14:43:34,028 [INFO] b'csrfmiddlewaretoken=JaWg7J9cKi7GDTiti9Rq5ffMMWlAwdUCtzpFmMILp38sis0RaSWoMBKTXrNpEXrz&nombreObra=Batman&artista=Neil+Adams+2&valor=400002&tipo_obra=Pintura&descripcion=Pintura+bkn&pathImagen=img%2Fproductos%2Fproducto1.jpg&codigoProducto=255&tecnica=Oleo&otros_detalles=Es+muy+linda&dimensiones=30x30&envio=Aereo&anno=2020&agree=agree'
+2022-07-11 14:43:34,029 [INFO] aca 1
+2022-07-11 14:43:34,030 [INFO] False
+2022-07-11 14:44:08,648 [INFO] b'csrfmiddlewaretoken=F8SMuTZfnd8M7cAI291g8PcD2OmSBuCmpxlbJWyO2Y9yMLi6US6ePbHKdjOHJe9j&nombreObra=Batman&artista=Neil+Adams&valor=400002&tipo_obra=Pintura&descripcion=Pintura+bkn&pathImagen=img%2Fproductos%2Fproducto1.jpg&codigoProducto=2500&tecnica=Oleo&otros_detalles=Es+muy+linda&dimensiones=30x30&envio=Aereo&anno=2020&agree=agree'
+2022-07-11 14:44:08,649 [INFO] aca 1
+2022-07-11 14:44:08,650 [INFO] False
+2022-07-11 14:47:03,994 [INFO] b'csrfmiddlewaretoken=F8SMuTZfnd8M7cAI291g8PcD2OmSBuCmpxlbJWyO2Y9yMLi6US6ePbHKdjOHJe9j&nombreObra=Batman&artista=Neil+Adams&valor=400002&tipo_obra=Pintura&descripcion=Pintura+bkn&pathImagen=img%2Fproductos%2Fproducto1.jpg&codigoProducto=2500&tecnica=Oleo&otros_detalles=Es+muy+linda&dimensiones=30x30&envio=Aereo&anno=2020&agree=agree'
+2022-07-11 14:47:03,995 [INFO] aca 1
+2022-07-11 14:47:03,996 [INFO] False
+2022-07-11 14:47:29,035 [INFO] b'csrfmiddlewaretoken=dRWWTomqlHoYCIVvu2Gm3GSp0DjumMhnXgpl8rVZ0spKhhDTmLLkK2nwb8LjuwOk&nombre=Batman&artista=Neil+Adams&valor=40000&tipo_obra=Pintura&descripcion=Pintura+bkn&pathImagen=img%2Fproductos%2Fproducto1.jpg&codigoProducto=2500&tecnica=Oleo&otros_detalles=Es+muy+linda&dimensiones=30x30&envio=Aereo&anno=2020&agree=agree'
+2022-07-11 14:47:29,036 [INFO] aca 1
+2022-07-11 14:47:29,037 [INFO] True
+2022-07-11 14:48:31,931 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\ahorasiquesi\paginaweb\PruebaDeisne\products\views.py changed, reloading.
+2022-07-11 14:48:34,627 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\ahorasiquesi\paginaweb\PruebaDeisne\products\views.py changed, reloading.
+2022-07-11 14:48:43,568 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\ahorasiquesi\paginaweb\PruebaDeisne\products\views.py changed, reloading.
+2022-07-11 14:48:46,268 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\ahorasiquesi\paginaweb\PruebaDeisne\products\views.py changed, reloading.
+2022-07-11 14:48:52,141 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\ahorasiquesi\paginaweb\PruebaDeisne\products\views.py changed, reloading.
+2022-07-11 14:49:00,067 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\ahorasiquesi\paginaweb\PruebaDeisne\products\views.py changed, reloading.
+2022-07-11 14:49:01,729 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\ahorasiquesi\paginaweb\PruebaDeisne\products\views.py changed, reloading.
+2022-07-11 14:49:24,327 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\ahorasiquesi\paginaweb\PruebaDeisne\crudProducts\urls.py changed, reloading.
+2022-07-11 14:49:27,022 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\ahorasiquesi\paginaweb\PruebaDeisne\crudProducts\urls.py changed, reloading.
+2022-07-11 14:49:29,696 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\ahorasiquesi\paginaweb\PruebaDeisne\crudProducts\urls.py changed, reloading.
+2022-07-11 14:49:33,457 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\ahorasiquesi\paginaweb\PruebaDeisne\crudProducts\urls.py changed, reloading.
+2022-07-11 14:49:35,114 [INFO] C:\Users\Jorge\Documents\Nelly Becerra\ahorasiquesi\paginaweb\PruebaDeisne\crudProducts\urls.py changed, reloading.
+2022-07-11 14:49:41,831 [ERROR] Internal Server Error: /producto-1
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jorge\Documents\Nelly Becerra\ahorasiquesi\paginaweb\PruebaDeisne\products\views.py", line 45, in producto_1
+    return render(request,'producto_1.html')
+  File "C:\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Python39\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Python39\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: producto_1.html
+2022-07-11 14:50:05,280 [ERROR] Internal Server Error: /producto-1
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jorge\Documents\Nelly Becerra\ahorasiquesi\paginaweb\PruebaDeisne\products\views.py", line 45, in producto_1
+    return render(request,'producto_1.html')
+  File "C:\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Python39\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Python39\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: producto_1.html
+2022-07-11 14:50:08,948 [WARNING] Not Found: /product-detail
+2022-07-11 14:51:33,913 [ERROR] Internal Server Error: /product-detail/1
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jorge\Documents\Nelly Becerra\ahorasiquesi\paginaweb\PruebaDeisne\products\views.py", line 73, in showDetails
+    return render(request,'product-detail.html', {'products':products})
+  File "C:\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Python39\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Python39\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Python39\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Python39\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Python39\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Python39\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 701, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '}, {{ products.anno' from 'products.nombre}, {{ products.anno'
+2022-07-11 14:51:46,237 [ERROR] Internal Server Error: /product-detail/1
+Traceback (most recent call last):
+  File "C:\Python39\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Python39\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jorge\Documents\Nelly Becerra\ahorasiquesi\paginaweb\PruebaDeisne\products\views.py", line 73, in showDetails
+    return render(request,'product-detail.html', {'products':products})
+  File "C:\Python39\lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Python39\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Python39\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "C:\Python39\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "C:\Python39\lib\site-packages\django\template\engine.py", line 176, in get_template
+    template, origin = self.find_template(template_name)
+  File "C:\Python39\lib\site-packages\django\template\engine.py", line 158, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Python39\lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 484, in parse
+    raise self.error(token, e)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 482, in parse
+    filter_expression = self.compile_filter(token.contents)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 600, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Python39\lib\site-packages\django\template\base.py", line 701, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '} {{ products.anno' from 'products.nombre} {{ products.anno'
+2022-07-11 14:54:47,858 [WARNING] Not Found: /product-detail/tienda
+2022-07-11 14:55:07,598 [WARNING] Not Found: /product-detail/tienda
+2022-07-11 14:55:16,759 [WARNING] Not Found: /product-detail/tienda
+2022-07-11 14:55:31,147 [WARNING] Not Found: /product-detail/index
+2022-07-11 14:55:37,666 [WARNING] Not Found: /product-detail/tienda
+2022-07-11 14:56:11,182 [INFO] b'csrfmiddlewaretoken=kE8eAa8ugrCOLJODwnr5WyQgIV7Jo01P43BDPdH3VcDAqiw1o6w3DUlnTqzywKyM&nombre=Superman&artista=Neil+Adams+2&valor=45454&tipo_obra=Pintura+2&descripcion=cxvxcvxc&pathImagen=img%2Fproductos%2Fproducto1.jpg&codigoProducto=2500&tecnica=Oleo2+&otros_detalles=Es+muy+linda+1&dimensiones=30x302&envio=Terrestre&anno=2021&agree=agree'
+2022-07-11 14:56:11,183 [INFO] aca 1
+2022-07-11 14:56:11,184 [INFO] True
+2022-07-11 14:59:22,898 [WARNING] Not Found: /product-detail/tienda
+2022-07-11 15:03:45,204 [WARNING] Not Found: /product-detail/tienda
+2022-07-11 15:04:10,271 [WARNING] Not Found: /product-detail/tienda

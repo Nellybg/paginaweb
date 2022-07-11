@@ -66,7 +66,12 @@ def emp(request):
     return render(request,'index.html',{'form':form})  
 def show(request):  
     productss = Products.objects.all()  
-    return render(request,"show.html",{'productss':productss})  
+    return render(request,"show.html",{'productss':productss})
+
+def showDetails(request, id):  
+    products = Products.objects.get(id=id)  
+    return render(request,'product-detail.html', {'products':products})  
+
 def edit(request, id):  
     products = Products.objects.get(id=id)  
     return render(request,'edit.html', {'products':products})  
