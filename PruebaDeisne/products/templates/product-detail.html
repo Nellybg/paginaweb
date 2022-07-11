@@ -89,7 +89,8 @@
             <div class="row">
                 <div class="col-sm-6">
                     <div class="imagen-producto">
-                        <img class="rounded mx-auto d-block" src="{% static 'img/productos/producto1.jpg' %}"
+                        {% static "" as baseUrl %}
+                        <img class="rounded mx-auto d-block" src="{{ baseUrl }}{{ products.pathImagen}}"
                             alt="cuadro de kirby" style="width: 52%">
                     </div>
                 </div>

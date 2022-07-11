@@ -1545,3 +1545,7 @@ django.template.exceptions.TemplateDoesNotExist: producto_1.html
 2022-07-11 15:58:54,281 [INFO] b'csrfmiddlewaretoken=rT9vvGBusJ7BayZg3Nw12P6YjwiW3yWqqrC8IX1nb2txgH2CvG47LTKxuLixejpD&nombre=Dogtor&artista=Canner&valor=35000&tipo_obra=Acuarela+en+Lienzo&descripcion=Retrato+de+un+observador&pathImagen=img%2Fproductos%2Fproducto6.jpg&codigoProducto=6600&tecnica=Acuarela&otros_detalles=Rreflejo+de+un+buen+compa%C3%B1ero&dimensiones=70+x+80+cms.&envio=Fedex&anno=1998&agree=agree'
 2022-07-11 15:58:54,282 [INFO] aca 1
 2022-07-11 15:58:54,283 [INFO] True
+2022-07-11 16:21:23,610 [WARNING] Not Found: /product-detail/img/productos/producto1.jpg
+2022-07-11 16:21:27,243 [WARNING] Not Found: /product-detail/img/productos/producto2.1.png
+2022-07-11 16:21:47,290 [WARNING] Not Found: /product-detail/img/productos/producto1.jpg
+2022-07-11 16:21:49,267 [WARNING] Not Found: /product-detail/img/productos/producto1.jpg
