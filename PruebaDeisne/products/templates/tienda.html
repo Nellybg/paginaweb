@@ -78,26 +78,28 @@
   </nav>
   <main>
     <div class="container">
-      {% for products in productss %}
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-          <div class="card shadow-sm">
-            {% static "" as baseUrl %}
-            <img src="{{ baseUrl }}{{ products.pathImagen}}" style="width: 52%; margin-left: 22%;">
-            <div class="card-body">
-              <h5 class="card-title">{{ products.nombre }}</h5>
-              <p class="card-text">{{ products.valor }}</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <a href="producto-1" class="btn btn-primary">Detalles</a>
+      <div class="row">
+        {% for products in productss %}
+        <div class="col-md-4 col-sm-12 col-lg-4">
+          <div class="col">
+            <div class="card shadow-sm">
+              {% static "" as baseUrl %}
+              <img src="{{ baseUrl }}{{ products.pathImagen}}" style="width: 52%; margin-left: 22%;">
+              <div class="card-body">
+                <h5 class="card-title">{{ products.nombre }}</h5>
+                <p class="card-text">{{ products.valor }}</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a href="producto-1" class="btn btn-primary">Detalles</a>
+                  </div>
+                  <a href="" class="btn btn-success">Agregar</a>
                 </div>
-                <a href="" class="btn btn-success">Agregar</a>
               </div>
             </div>
           </div>
         </div>
+        {% endfor %}
       </div>
-      {% endfor %}
     </div>
 
     <a href="addProduct" type="button" class="btn btn-primary">
