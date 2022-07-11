@@ -3,6 +3,7 @@ from django.urls import path
 from products import views  
 urlpatterns = [  
     path('admin/', admin.site.urls),
+    path('', views.index), 
     path('index', views.index),   
     path('signin', views.signin),
     path('contacto', views.contacto),
