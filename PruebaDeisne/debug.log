@@ -1614,3 +1614,9 @@ products.models.Products.DoesNotExist: Products matching query does not exist.
 2022-07-11 17:57:47,651 [WARNING] Not Found: /product-detail/index
 2022-07-11 17:58:07,596 [WARNING] Not Found: /product-detail/index
 2022-07-11 18:10:33,843 [WARNING] Not Found: /product-detail/index
+2022-07-14 17:50:49,530 [WARNING] Not Found: /favicon.ico
+2022-07-14 17:53:07,646 [INFO] C:\Users\Administrador\Downloads\Nueva carpeta\paginaweb\PruebaDeisne\products\admin.py changed, reloading.
+2022-07-14 17:53:47,969 [INFO] C:\Users\Administrador\Downloads\Nueva carpeta\paginaweb\PruebaDeisne\products\admin.py changed, reloading.
+2022-07-14 18:20:39,821 [INFO] C:\Users\Administrador\Downloads\Nueva carpeta\paginaweb\PruebaDeisne\crudProducts\urls.py changed, reloading.
+2022-07-14 18:22:19,554 [INFO] C:\Users\Administrador\Downloads\Nueva carpeta\paginaweb\PruebaDeisne\products\api\serializers.py changed, reloading.
+2022-07-14 18:24:22,701 [WARNING] Bad Request: /api/products/
